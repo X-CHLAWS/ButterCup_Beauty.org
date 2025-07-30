@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Buttercup Essentials</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f8f4e9 0%, #f5e6d2 100%);
+            color: #3a3a3a;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        
+        /* Background Animation Elements */
+        .bg-circle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.1;
+            animation: float 15s infinite ease-in-out;
+            z-index: 0;
+        }
+        
+        .circle-1 {
+            width: 300px;
+            height: 300px;
+            background: #d4af37;
+            top: -100px;
+            left: -100px;
+            animation-delay: 0s;
+        }
+        
+        .circle-2 {
+            width: 200px;
+            height: 200px;
+            background: #8b4513;
+            bottom: -50px;
+            right: -50px;
+            animation-delay: 2s;
+        }
+        
+        .circle-3 {
+            width: 150px;
+            height: 150px;
+            background: #f5d0b1;
+            top: 40%;
+            right: 20%;
+            animation-delay: 4s;
+        }
+        
+        /* Main Content Container */
+        .welcome-container {
+            text-align: center;
+            position: relative;
+            z-index: 10;
+            padding: 30px;
+            max-width: 800px;
+            width: 90%;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 20px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            transform: translateY(20px);
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 0.5s forwards;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        /* Logo Styles */
+        .welcome-logo {
+            margin: 0 auto 30px;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #f5d0b1 0%, #d4af37 50%, #8b4513 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            box-shadow: 
+                0 10px 30px rgba(212, 175, 55, 0.3),
+                inset 0 0 15px rgba(255, 255, 255, 0.3);
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            transform: scale(0);
+            animation: logoPop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s forwards;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .welcome-logo::before {
+            content: '';
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            background: conic-gradient(
+                transparent, 
+                transparent, 
+                transparent, 
+                #ffffff88
+            );
+            animation: rotate 4s linear infinite;
+        }
+        
+        .welcome-logo img {
+            width: 80%;
+            height: 80%;
+            object-fit: contain;
+            z-index: 2;
+            background-color: white;
+            border-radius: 50%;
+            padding: 10px;
+        }
+        
+        /* Text Styles */
+        .welcome-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: #3a3a3a;
+            margin-bottom: 15px;
+            line-height: 1.2;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease-out 1.2s forwards;
+        }
+        
+        .welcome-title span {
+            color: #d4af37;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .welcome-title span::after {
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #d4af37 0%, #f5d0b1 100%);
+            transform: scaleX(0);
+            transform-origin: left;
+            animation: underlineGrow 1.2s ease-out 1.8s forwards;
+        }
+        
+        .welcome-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 30px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease-out 1.5s forwards;
+        }
+        
+        .welcome-message {
+            font-size: 1rem;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto 30px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease-out 1.8s forwards;
+        }
+        
+        .redirect-message {
+            font-size: 0.9rem;
+            color: #888;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 2s forwards;
+        }
+        
+        .loading-bar {
+            width: 0%;
+            height: 3px;
+            background: linear-gradient(90deg, #d4af37 0%, #8b4513 100%);
+            margin: 20px auto 0;
+            border-radius: 3px;
+            animation: loadingBar 3s linear forwards;
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes logoPop {
+            0% { transform: scale(0); }
+            70% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0) translateX(0); }
+            50% { transform: translateY(-20px) translateX(10px); }
+        }
+        
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        @keyframes underlineGrow {
+            from { transform: scaleX(0); }
+            to { transform: scaleX(1); }
+        }
+        
+        @keyframes loadingBar {
+            0% { width: 0%; }
+            100% { width: 100%; }
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .welcome-title {
+                font-size: 2.2rem;
+            }
+            
+            .welcome-subtitle {
+                font-size: 1rem;
+            }
+            
+            .welcome-logo {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .circle-1 {
+                width: 200px;
+                height: 200px;
+            }
+            
+            .circle-2 {
+                width: 150px;
+                height: 150px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .welcome-title {
+                font-size: 1.8rem;
+            }
+            
+            .welcome-subtitle {
+                font-size: 0.9rem;
+            }
+            
+            .welcome-message {
+                font-size: 0.9rem;
+            }
+            
+            .welcome-logo {
+                width: 80px;
+                height: 80px;
+            }
+            
+            .welcome-container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Animation Elements -->
+    <div class="bg-circle circle-1"></div>
+    <div class="bg-circle circle-2"></div>
+    <div class="bg-circle circle-3"></div>
+    
+    <!-- Main Content -->
+    <div class="welcome-container">
+        <div class="welcome-logo">
+            <img src="logo.png" alt="Buttercup Essentials Logo">
+        </div>
+        
+        <h1 class="welcome-title">Welcome to <span>Buttercup Essentials</span></h1>
+        <p class="welcome-subtitle">Premium Cosmetic Formulations & Luxury Wigs</p>
+        <p class="welcome-message">
+            Discover our handcrafted beauty products made with the finest ingredients 
+            to enhance your natural radiance. Experience the Buttercup difference today.
+        </p>
+        
+        <div class="loading-bar"></div>
+        <p class="redirect-message">You will be redirected to our main page shortly...</p>
+    </div>
+
+    <!-- Redirect Script -->
+    <script>
+        setTimeout(function() {
+            window.location.href = "main.html";
+        }, 6000);
+    </script>
+</body>
+</html>

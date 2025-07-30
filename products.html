@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Buttercup Essentials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </div>
+    
+    <header class="luxury-header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-container">
+  <div class="logo-frame">
+    <img src="logo.png" alt="Buttercup Essentials Logo" class="logo-image">
+  </div>
+  <div class="logo-text">
+    <h1 class="logo-title">Buttercup<span class="logo-highlight">Essentials</span></h1>
+    <p class="logo-tagline">Premium Cosmetic Formulations</p>
+  </div>
+</div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="login.html" class="btn-login">Login</a>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html" class="active">Products</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </div>
+    
+    <section class="products-hero">
+        <div class="products-hero-content">
+            <h1 class="animate-slide-up">Our Products</h1>
+            <p class="animate-slide-up delay-1">Premium formulations for radiant skin and beauty</p>
+        </div>
+    </section>
+    
+    <section class="product-categories">
+        <div class="container">
+            <h2>Product Categories</h2>
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="all">All Products</button>
+                <button class="category-tab" data-category="facial">Facial Care</button>
+                <button class="category-tab" data-category="body">Body Care</button>
+                <button class="category-tab" data-category="sets">Product Sets</button>
+                <button class="category-tab" data-category="wigs">Wigs</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="products-list">
+        <div class="container">
+            <div class="products-grid">
+                <!-- Facial Care Products -->
+                <div class="product-card" data-category="facial">
+                    <div class="product-image">
+                        <img src="face-wash.jpg" alt="Purifying Tea Tree Face Wash">
+                        <div class="product-badge">Best Seller</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Purifying Tea Tree Face Wash</h3>
+                        <p class="product-desc">Deeply cleanses pores while controlling excess oil and breakouts.</p>
+                        <div class="product-price">
+                            <span class="old-price">¢60</span>
+                            <span class="current-price">¢45</span>
+                        </div>
+                        <button class="btn-add-to-cart" data-id="1">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="facial">
+                    <div class="product-image">
+                        <img src="cleanser.jpg" alt="Clarifying Gentle Cleanser">
+                    </div>
+                    <div class="product-info">
+                        <h3>Clarifying Gentle Cleanser</h3>
+                        <p class="product-desc">Gentle yet effective cleanser for all skin types.</p>
+                        <div class="product-price">
+                            <span class="old-price">¢70</span>
+                            <span class="current-price">¢50</span>
+                        </div>
+                        <button class="btn-add-to-cart" data-id="2">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="facial">
+                    <div class="product-image">
+                        <img src="scrub.jpg" alt="T & C Exfoliating Scrubs">
+                    </div>
+                    <div class="product-info">
+                        <h3>T & C Exfoliating Scrubs</h3>
+                        <p class="product-desc">Removes dead skin cells for a smoother complexion.</p>
+                        <div class="product-price">
+                            <span class="old-price">¢60</span>
+                            <span class="current-price">¢45</span>
+                        </div>
+                        <button class="btn-add-to-cart" data-id="3">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="facial">
+                    <div class="product-image">
+                        <img src="serum.jpg" alt="Repair Brightening Serum">
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Repair Brightening Serum</h3>
+                        <p class="product-desc">Targets dark spots and uneven skin tone.</p>
+                        <div class="product-price">
+                            <span class="old-price">¢50</span>
+                            <span class="current-price">¢30</span>
+                        </div>
+                        <button class="btn-add-to-cart" data-id="4">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="facial">
+                    <div class="product-image">
+                        <img src="toner.jpg" alt="Hydrating Rose Toner">
+                    </div>
+                    <div class="product-info">
+                        <h3>Hydrating Rose Toner</h3>
+                        <p class="product-desc">Balances pH and refreshes skin.</p>
+                        <div class="product-price">
+                            <span class="old-price">¢45</span>
+                            <span class="current-price">¢30</span>
+                        </div>
+                        <button class="btn-add-to-cart" data-id="5">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="facial">
+                    <div class="product-image">
+                        <img src="moisturizer.jpg" alt="Glow Boost Face Moisturizer">
+                    </div>
+                    <div class="product-info">
+                        <h3>Glow Boost Face Moisturizer</h3>
+                        <p class="product-desc">Hydrates while giving skin a radiant glow.</p>
+                        <div class="product-price">
+                            <span class="old-price">¢60</span>
+                            <span class="current-price">¢40</span>
+                        </div>
+                        <button class="btn-add-to-cart" data-id="6">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Body Care Products -->
+                <div class="product-card" data-category="body">
+                    <div class="product-image">
+                        <img src="body-butter.jpg" alt="Moisturizing Shea Body Butter">
+                    </div>
+                    <div class="product-info">
+                        <h3>Moisturizing Shea Body Butter</h3>
+                        <p class="product-desc">Rich hydration for dry skin.</p>
+                        <div class="product-price">
+                            <span class="old-price">¢60</span>
+                            <span class="current-price">¢40</span>
+                        </div>
+                        <button class="btn-add-to-cart" data-id="7">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="body">
+                    <div class="product-image">
+                        <img src="brightening-oil.jpg" alt="Radiant Glow Brightening Oil">
+                    </div>
+                    <div class="product-info">
+                        <h3>Radiant Glow Brightening Oil</h3>
+                        <p class="product-desc">Nourishes while improving skin tone.</p>
+                        <div class="product-price">
+                            <span class="old-price">¢130</span>
+                            <span class="current-price">¢110</span>
+                        </div>
+                        <button class="btn-add-to-cart" data-id="8">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="body">
+                    <div class="product-image">
+                        <img src="lotion.jpg" alt="Rejuvenate Brightening Lotion">
+                    </div>
+                    <div class="product-info">
+                        <h3>Rejuvenate Brightening Lotion</h3>
+                        <p class="product-desc">Lightweight hydration with brightening benefits.</p>
+                        <div class="product-price">
+                            <span class="old-price">¢160</span>
+                            <span class="current-price">¢140</span>
+                        </div>
+                        <button class="btn-add-to-cart" data-id="9">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="body">
+                    <div class="product-image">
+                        <img src="shower-gel.jpg" alt="Soothing Black Soap Shower Gel">
+                    </div>
+                    <div class="product-info">
+                        <h3>Soothing Black Soap Shower Gel</h3>
+                        <p class="product-desc">Gentle cleansing for all skin types.</p>
+                        <div class="product-price">
+                            <span class="old-price">¢80</span>
+                            <span class="current-price">¢70</span>
+                        </div>
+                        <button class="btn-add-to-cart" data-id="10">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="body">
+                    <div class="product-image">
+                        <img src="detox.jpg" alt="Facial Detox ">
+                    </div>
+                    <div class="product-info">
+                        <h3>Facial Detox </h3>
+                        <p class="product-desc">Traditional remedy for clear face.</p>
+                        <div class="product-price">
+                            <span class="old-price">¢50</span>
+                            <span class="current-price">¢30</span>
+                        </div>
+                        <button class="btn-add-to-cart" data-id="11">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product Sets -->
+                <div class="product-card" data-category="sets">
+                    <div class="product-image">
+                        <img src="facial-set.jpg" alt="Facial Set">
+                        <div class="product-badge">Bundle</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Facial Set</h3>
+                        <p class="product-desc">Complete facial care routine in one set.</p>
+                        <div class="product-price">
+                            <span class="old-price">¢345</span>
+                            <span class="current-price">¢240</span>
+                        </div>
+                        <button class="btn-add-to-cart" data-id="12">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="sets">
+                    <div class="product-image">
+                        <img src="glow-set.jpg" alt="Glow Body Set">
+                        <div class="product-badge">Bundle</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Glow Body Set</h3>
+                        <p class="product-desc">Achieve radiant skin from head to toe.</p>
+                        <div class="product-price">
+                            <span class="old-price">¢200</span>
+                            <span class="current-price">¢155</span>
+                        </div>
+                        <button class="btn-add-to-cart" data-id="13">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="sets">
+                    <div class="product-image">
+                        <img src="body-repair.jpg" alt="Body Repair Set">
+                        <div class="product-badge">Bundle</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Body Repair Set</h3>
+                        <p class="product-desc">Repair and rejuvenate your skin.</p>
+                        <div class="product-price">
+                            <span class="old-price">¢330</span>
+                            <span class="current-price">¢265</span>
+                        </div>
+                        <button class="btn-add-to-cart" data-id="14">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="sets">
+                    <div class="product-image">
+                        <img src="lighter-set.jpg" alt="Lighter Set">
+                        <div class="product-badge">Bundle</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Lighter Set</h3>
+                        <p class="product-desc">For a brighter, more even complexion.</p>
+                        <div class="product-price">
+                            <span class="old-price">¢300</span>
+                            <span class="current-price">¢255</span>
+                        </div>
+                        <button class="btn-add-to-cart" data-id="15">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Wigs (placeholder) -->
+                <div class="product-card" data-category="wigs">
+                    <div class="product-image">
+                        <img src="wig1.jpg" alt="Premium Wig">
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Human Hair Wig</h3>
+                        <p class="product-desc">High-quality, natural-looking wigs.</p>
+                        <div class="product-price">
+                            <span class="current-price">From ¢500</span>
+                        </div>
+                        <button class="btn-add-to-cart" data-id="16">Inquire</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="product-benefits">
+        <div class="container">
+            <h2>Why Choose Our Products?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Natural Ingredients</h3>
+                    <p>Formulated with high-quality, natural ingredients for effective results.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Expert Formulations</h3>
+                    <p>Developed by cosmetic formulation experts for optimal performance.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>FDA Approved</h3>
+                    <p>All products meet strict quality and safety standards.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Made with Care</h3>
+                    <p>Each product is crafted with attention to detail and passion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="luxury-footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Buttercup Essentials</h3>
+                <p>Premium cosmetic formulations and wigs crafted with care and expertise.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/buttercup_essentials" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.snapchat.com/add/buttercup_buti" target="_blank"><i class="fab fa-snapchat"></i></a>
+                    <a href="https://wa.me/233559065136" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +233 559 065 136</p>
+                <p><i class="fas fa-envelope"></i> info@buttercupessentials.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Accra, Ghana</p>
+            </div>
+            
+            <div class="footer-payment">
+                <h3>Payment Methods</h3>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                       <i class="fab fa-cc-paypal"></i>
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Buttercup Essentials. All Rights Reserved.</p>
+            <p>FDA Approved Cosmetic Products</p><br> <p>Works Of X-Chlaws I.T Media</p>
+        </div>
+    </footer>
+    
+    <div class="cart-overlay">
+        <div class="cart-container">
+            <div class="cart-header">
+                <h3>Your Cart</h3>
+                <button class="close-cart"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="cart-items">
+                <!-- Cart items will be added here dynamically -->
+            </div>
+            <div class="cart-total">
+                <h4>Total: <span>¢0.00</span></h4>
+            </div>
+            <div class="cart-actions">
+                <button class="btn-secondary clear-cart">Clear Cart</button>
+                <button class="btn-primary checkout">Checkout</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+    <script src="cart.js"></script>
+    <script src="product-filter.js"></script>
+</body>
+</html>

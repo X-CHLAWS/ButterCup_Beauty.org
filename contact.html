@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Buttercup Essentials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </div>
+    
+    <header class="luxury-header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-container">
+  <div class="logo-frame">
+    <img src="logo.png" alt="Buttercup Essentials Logo" class="logo-image">
+  </div>
+  <div class="logo-text">
+    <h1 class="logo-title">Buttercup<span class="logo-highlight">Essentials</span></h1>
+    <p class="logo-tagline">Premium Cosmetic Formulations</p>
+  </div>
+</div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="login.html" class="btn-login">Login</a>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </div>
+    
+    <section class="contact-hero">
+        <div class="contact-hero-content">
+            <h1 class="animate-slide-up">Contact Us</h1>
+            <p class="animate-slide-up delay-1">We'd love to hear from you</p>
+        </div>
+    </section>
+    
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Phone</h3>
+                        <p>+233 559 065 136</p>
+                    </div>
+                </div>
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p>info@buttercupessentials.com</p>
+                    </div>
+                </div>
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>WhatsApp</h3>
+                        <p>+233 559 065 136</p>
+                    </div>
+                </div>
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Instagram</h3>
+                        <p>@buttercup_essentials</p>
+                    </div>
+                </div>
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fab fa-snapchat"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Snapchat</h3>
+                        <p>buttercup_buti</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form-container">
+                <h2>Send Us a Message</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="luxury-btn btn-gold-primary animate-slide-up delay-2" class="btn-primary">Send Message</button>
+                      
+                </form>
+                <div class="form-success" id="formSuccess" style="display: none;">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Thank You!</h3>
+                    <p>Your message has been sent successfully. We'll get back to you soon.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Where are your products made?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>All Buttercup Essentials products are proudly made in Ghana using high-quality ingredients and expert formulations.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Are your products FDA approved?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, all our cosmetic products are FDA approved, ensuring they meet strict quality and safety standards.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What payment methods do you accept?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept mobile money, credit/debit cards, and bank transfers. All payments are processed securely.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does delivery take?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Delivery times vary by location. Within Accra, delivery typically takes 1-2 business days. Other regions may take 3-5 business days.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer international shipping?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Currently, we only ship within Ghana. We're working on expanding our shipping options in the future.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="location-section">
+        <div class="container">
+            <h2>Where to Find Us</h2>
+            <div class="location-content">
+                <div class="location-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.755203807498!2d-0.200548985231921!3d5.603965995958973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9084b2b7a773%3A0x5d1c3a6b5a4f8b9c!2sAccra%2C%20Ghana!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="location-info">
+                    <h3>Business Hours</h3>
+                    <ul class="business-hours">
+                        <li><span>Monday - Friday:</span> 9:00 AM - 6:00 PM</li>
+                        <li><span>Saturday:</span> 10:00 AM - 4:00 PM</li>
+                        <li><span>Sunday:</span> Closed</li>
+                    </ul>
+                    <h3>Exhibitions & Fairs</h3>
+                    <p>You can also find us at various exhibitions and fairs throughout the year, including:</p>
+                    <ul class="exhibitions-list">
+                        <li>Hibs Exhibition</li>
+                        <li>Made in Ghana Fair</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="luxury-footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Buttercup Essentials</h3>
+                <p>Premium cosmetic formulations and wigs crafted with care and expertise.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/buttercup_essentials" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.snapchat.com/add/buttercup_buti" target="_blank"><i class="fab fa-snapchat"></i></a>
+                    <a href="https://wa.me/233559065136" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +233 559 065 136</p>
+                <p><i class="fas fa-envelope"></i> info@buttercupessentials.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Accra, Ghana</p>
+            </div>
+            
+            <div class="footer-payment">
+                <h3>Payment Methods</h3>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Buttercup Essentials. All Rights Reserved.</p>
+            <p>FDA Approved Cosmetic Products</p><br> <p>Works Of X-Chlaws I.T Media</p>
+        </div>
+    </footer>
+    
+    <div class="cart-overlay">
+        <div class="cart-container">
+            <div class="cart-header">
+                <h3>Your Cart</h3>
+                <button class="close-cart"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="cart-items">
+                <!-- Cart items will be added here dynamically -->
+            </div>
+            <div class="cart-total">
+                <h4>Total: <span>¢0.00</span></h4>
+            </div>
+            <div class="cart-actions">
+                <button class="btn-secondary clear-cart">Clear Cart</button>
+                <button class="btn-primary checkout">Checkout</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+    <script src="cart.js"></script>
+    <script src="contact-form.js"></script>
+    <script src="faq.js"></script>
+</body>
+</html>
